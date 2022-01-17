@@ -6,4 +6,11 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    idx=0
+    punct=0
+    while idx<len(s):
+        if not s[idx].isalpha() and not s[idx].isdigit:
+            punct+=1
+        idx+=1
+    return punct
+print(main("20,**abc21"))
