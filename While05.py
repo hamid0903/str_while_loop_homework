@@ -6,4 +6,11 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    idx=0
+    lower=0
+    while idx<len(s):
+        if s[idx].islower():
+            lower+=1
+        idx+=1
+    return lower
+print(main("20abcABCD21"))
