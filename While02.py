@@ -6,4 +6,11 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    idx=0
+    alpha=0
+    while idx<len(s):
+        if s[idx].isalpha():
+            alpha+=1
+        idx+=1
+    return alpha
+print(main("20abc21"))
