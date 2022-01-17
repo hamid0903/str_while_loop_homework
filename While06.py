@@ -7,12 +7,13 @@ def main(s):
     Returns:
         int: return answer
     """
+    s=s.lower()
     idx = 0
     cons = 0
     while idx < len(s):
         if s[idx].isalpha():
-            if s[idx]!="a" or s[idx]!="A" or s[idx]!="e" or s[idx]!="E" or s[idx]!="i" or s[idx]!="I" or s[idx]!="o" or s[idx]!="O" or s[idx]!="u"or s[idx]!="U":
+            if s[idx]!="a" or s[idx]!="e" or s[idx]!="i" or s[idx]!="o" or s[idx]!="u":
                 cons+=1
         idx += 1
     return cons
-print(main("abcdefghklmnopqrstuvwxyz"))
+print(main("abcdefghklmnopqrstUVWXYZ"))
