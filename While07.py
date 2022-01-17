@@ -10,10 +10,10 @@ def main(s):
     numb=0
     while idx<len(s):
         if s[idx].isdigit():
-            if int(s[idx])%2==0 and int(s[idx])!=0:
+            if int(s[idx])%2==0:
                 numb+=1
-            else:
-                numb+=0
+            #else:
+                #numb+=0
         idx+=1
     return numb
 print(main("20abc21"))
