@@ -6,4 +6,11 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    idx=0
+    numb=0
+    while idx<len(s):
+        if s[idx].isdigit():
+            numb+=int(s[idx])
+        idx+=1
+    return numb
+print(main("10110110"))
