@@ -13,8 +13,6 @@ def main(s):
         if s[idx].isalpha():
             if s[idx]!="a" or s[idx]!="A" or s[idx]!="e" or s[idx]!="E" or s[idx]!="i" or s[idx]!="I" or s[idx]!="o" or s[idx]!="O" or s[idx]!="u"or s[idx]!="U":
                 cons+=1
-            else:
-                cons+=0
         idx += 1
     return cons
 print(main("abcdefghklmnopqrstuvwxyz"))
