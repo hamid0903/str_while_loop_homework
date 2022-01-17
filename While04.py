@@ -6,4 +6,11 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    idx=0
+    upper=0
+    while idx<len(s):
+        if s[idx].isupper():
+            upper+=1
+        idx+=1
+    return upper
+print(main("20abcABCD21"))
